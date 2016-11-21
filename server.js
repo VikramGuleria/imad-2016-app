@@ -28,7 +28,7 @@ var htmltemplate - `
 <html>
     <head>
  <title>
-   %{title}
+   ${title}
     
  </title>   
 <meta name="viexport" content="width=device-width,initial-scale=1" />
