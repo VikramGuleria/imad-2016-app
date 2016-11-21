@@ -9,7 +9,8 @@ app.use(morgan('combined'));
     title : 'Article one | Vikram Guleria',
     heading : 'Article one ',
     date: 'sep 5,2015',
-    content: ` <p>
+    content: `
+    <p>
                 This is  a content of my first paragraph.      this is  a content of my first paragraph.      this is  a content of my first paragraph.      this is  a content of my first paragraph.      this is  a content of my first paragraph.      this is  a content of my first paragraph.
             </p>
         <p>
@@ -24,7 +25,8 @@ function createtemplate(data){
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
-var htmltemplate = `
+    
+  var htmltemplate = `
 <html>
     <head>
  <title>
@@ -59,7 +61,7 @@ var htmltemplate = `
 </html>
 
 
-`;
+ `;
  return htmltemplate;
 }
 app.get('/', function (req, res) {
