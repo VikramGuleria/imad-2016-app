@@ -85,20 +85,18 @@ app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
-app.get('/:articlename',function(req,res) {
-    //articlename== article-one
-    //articles[articlename]=={} content object for article one
-    var articlename = res.params.articlename;
- res.send(createTemplate(articles[articlenameOne]));
+app.get('/:articleName',function(req,res) {
+    //articleName == article-one
+    //articles[articleName]=={} content object for article one
+    var articlename = req.params.articleName;
+ res.send(createTemplate(articles[articleNameone]));
     });
     
-app.get('/article-two',function(req,res) {
-    res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
-    });
     
-    app.get('/article-three',function(req,res) {
-  res.sendFile(path.join(__dirname, 'ui', 'article-three.html'));
-    });
+    app.get('/ui/style.css', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'style.css'));
+});
+
 
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
