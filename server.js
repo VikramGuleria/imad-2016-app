@@ -38,7 +38,7 @@ app.use(morgan('combined'));
     <p>
     This is third .
             </p>`
-    }       
+    },       
    };
 function createTemplate(data){
     var title = data.title;
