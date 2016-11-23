@@ -5,7 +5,7 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
-   var articleone = {
+   var articleOne = {
     title : 'Article one | Vikram Guleria',
     heading : 'Article one ',
     date: 'sep 5,2015',
@@ -20,13 +20,13 @@ app.use(morgan('combined'));
               This is m web page.  this is m web page.  this is m web page.  this is m web page.  this is m web page.  this is m web page.  this is m web page.  this is m web page.  this is m web page.  this is m web page.  this is m web page.
         </p>`
 };
-function createtemplate(data){
+function createTemplate(data){
     var title = data.title;
     var date = data.date;
     var heading = data.heading;
     var content = data.content;
     
-  var htmltemplate = `
+  var htmlTemplate = `
 <html>
     <head>
  <title>
@@ -43,7 +43,7 @@ function createtemplate(data){
                 <a href="/">home</a>
             </div>
     
-        <hr>
+        <hr/>
         <h3>
            ${heading}
         </h3>
@@ -54,22 +54,19 @@ function createtemplate(data){
            ${content}
         </div>
         </div>
-   
 </body>
-    
-    
 </html>
 
 
  `;
- return htmltemplate;
+ return htmlTemplate;
 }
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 
 app.get('/article-one',function(req,res) {
- res.send(createtemplate(articleone));
+ res.send(createTemplate(articleOne));
     });
     
 app.get('/article-two',function(req,res) {
