@@ -89,11 +89,11 @@ submit.onclick = function() {
         if (request.readyState === XMLHttpRequest.DONE) {
         if (request.status === 200 ){
        
-        var namespasswords = request.responseText;
+        var passwords = request.responseText;
    passwords = JSON.parse(passwords);
    var list = '';
-   for (var i=0; i< namespasswords.length; i++) {
-       list += '<li>' + namespasswords[i] + '</li>';
+   for (var i=0; i< passwords.length; i++) {
+       list += '<li>' + passwords[i] + '</li>';
        
         }
         var ul=  document.getElementById('namelistpasswordlist');
