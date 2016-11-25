@@ -10,7 +10,7 @@ function moveRight () {
 img.onclick = function(){
      var interval = setInterval(moveRight,100);
 };
-var img = document.getElementById('img');
+var img = document.getElementById('vik');
 var marginRight = 0;
 function moveLeft () {
     
