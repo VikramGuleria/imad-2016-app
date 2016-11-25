@@ -103,7 +103,7 @@ res.send(JSON.stringify(names));
 
 var passwords = [];
 app.get('/submit-password',function(req, res) {
-var name = req.query.password;
+var password = req.query.password;
 passwords.push(password);
 
 res.send(JSON.stringify(passwords));
