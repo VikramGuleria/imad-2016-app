@@ -10,6 +10,7 @@ function moveRight () {
 img.onclick = function(){
      var interval = setInterval(moveRight,-100);
 };
+
 var img = document.getElementById('madi2');
 var marginRight = 0;
 function moveLeft () {
