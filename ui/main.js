@@ -67,8 +67,7 @@ submit.onclick = function() {
        list += '<li>' + names[i] + '</li>';
        
         }
-        var ul=  document.getElementById('namelist');
-        ul.innerHTML = list;
+       
     }
         }
 };
@@ -95,7 +94,8 @@ submit.onclick = function() {
    for (var i=0; i< passwords.length; i++) {
        list += '<li>' + passwords[i] + '</li>';
        
-        }
+        } var ul=  document.getElementById('namelist');
+        ul.innerHTML = list;
         var ul=  document.getElementById('passwordlist');
         ul.innerHTML = list;
     }
