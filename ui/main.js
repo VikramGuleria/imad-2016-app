@@ -11,14 +11,14 @@ img.onclick = function(){
      var interval = setInterval(moveRight,100);
 };
 var img = document.getElementById('img');
-var marginLeft = 0;
-function moveRight () {
+var marginRight = 0;
+function movLeftt () {
     
-     marginLeft = marginLeft + 1;
-     img.style.marginLeft = marginLeft + 'px';
+     marginRight = marginRight + 1;
+     img.style.marginLeft = marginRight + 'px';
 }
 img.onclick = function(){
-     var interval = setInterval(moveRight,10);
+     var interval = setInterval(moveLeft,10);
 };
 
 
