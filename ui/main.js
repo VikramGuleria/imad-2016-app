@@ -89,7 +89,7 @@ submit.onclick = function() {
         if (request.readyState === XMLHttpRequest.DONE) {
         if (request.status === 200 ){
        
-        var passwords = request.responseText;
+        var namespasswords = request.responseText;
    passwords = JSON.parse(passwords);
    var list = '';
    for (var i=0; i< namespasswords.length; i++) {
