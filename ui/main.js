@@ -1,4 +1,4 @@
-var element = document.getElementById('main-text');
+
 
 var img = document.getElementById('madi');
 var marginLeft = 0;
