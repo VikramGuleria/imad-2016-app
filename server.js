@@ -99,7 +99,7 @@ names.push(name);
 
 res.send(JSON.stringify(names));
     
-
+});
 
 var passwords = [];
 app.get('/submit-password',function(req, res) {
@@ -108,7 +108,6 @@ passwords.push(password);
 
 res.send(JSON.stringify(passwords));
     
-});
 });
 app.get('/:articleName',function(req,res) {
     //articleName == article-one
