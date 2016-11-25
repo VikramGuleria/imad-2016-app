@@ -96,7 +96,7 @@ submit.onclick = function() {
        list += '<li>' + passwords[i] + '</li>';
        
         }
-        var ul=  document.getElementById('namelistpasswordlist');
+        var ul=  document.getElementById('passwordlist');
         ul.innerHTML = list;
     }
         }
