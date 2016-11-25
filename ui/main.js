@@ -23,6 +23,7 @@ img.onclick = function(){
 };
 
 
+
 var button = document.getElementById('counter');
 
 
@@ -74,6 +75,35 @@ submit.onclick = function() {
 var nameInput = document.getElementById('name');
 var name= nameInput.value;
 request.open('GET','http://vikramguleria.imad.hasura-app.io/submit-name?name='+ name,true);
+request.send(null);
+
+};
+
+var submit= document.getElementById('submit_btn');
+submit.onclick = function() {
+ 
+   
+    var request = new XMLHttpRequest();
+    
+    request.onreadystatechange = function() {
+        if (request.readyState === XMLHttpRequest.DONE) {
+        if (request.status === 200 ){
+       
+        var passwords = request.responseText;
+   passwords = JSON.parse(passwords);
+   var list = '';
+   for (var i=0; i< passwords.length; i++) {
+       list += '<li>' + passwords[i] + '</li>';
+       
+        }
+        var ul=  document.getElementById('passwordlist');
+        ul.innerHTML = list;
+    }
+        }
+};
+var passwordInput = document.getElementById('password');
+var password= passwordInput.value;
+request.open('GET','http://vikramguleria.imad.hasura-app.io/submit-password?password='+ password,true);
 request.send(null);
 
 };
