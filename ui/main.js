@@ -12,7 +12,7 @@ img.onclick = function(){
 };
 var img = document.getElementById('img');
 var marginRight = 0;
-function movLeftt () {
+function moveLeft () {
     
      marginRight = marginRight + 1;
      img.style.marginLeft = marginRight + 'px';
