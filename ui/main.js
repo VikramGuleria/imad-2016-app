@@ -1,6 +1,6 @@
 
 
-var img = document.getElementById('madi');
+var img = document.getElementById('madi1');
 var marginLeft = 0;
 function moveRight () {
     
@@ -10,7 +10,7 @@ function moveRight () {
 img.onclick = function(){
      var interval = setInterval(moveRight,-100);
 };
-var img = document.getElementById('madi');
+var img = document.getElementById('madi2');
 var marginRight = 0;
 function moveLeft () {
     
