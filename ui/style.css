@@ -4,6 +4,9 @@ body {
    background:url(http://freephotos.atguru.in/hdphotos/computer-backgrounds/3931-pc-ware-1920x1200-computer-wallpaper.jpg);
    background: linear-gradient(black, white);
     background: radial-gradient(circle, black, white);
+     background:
+    url(logo.png) bottom center no-repeat,
+    url(background-pattern.png) repeat;
     margin-top: 60px;
 }
 
