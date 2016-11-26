@@ -1,10 +1,10 @@
 body {
     font-family: Algerian;
     background-color: pink;
-   background:url(http://freephotos.atguru.in/hdphotos/computer-backgrounds/3931-pc-ware-1920x1200-computer-wallpaper.jpg), url(background-pattern.png);
+  background:url(http://pixelperc.com/wp-content/uploads/2016/09/live-wallpaper-windows-7-anime-1680-x-1050-883-kb-orton-bishop-with-the-most-amazing-download-anime-live-wallpaper-for-windows-7-for-fantasy-1024x640.jpg);
+  
    background: linear-gradient(yellow,pink);
-    background: radial-gradient(circle, black, white);
-   
+    background: radial-gradient(circle, black, white); 
    
     margin-top: 60px;
 }
