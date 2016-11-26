@@ -127,15 +127,15 @@ app.get('/:articleName',function(req,res) {
 });
 
 
-app.get('/ui/madi1.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi1.png'));
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
-app.get('/ui/madi2.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi2.png'));
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-app.get('/ui/madi3.png', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'madi3.png'));
+app.get('/ui/madi.png', function (req, res) {
+  res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
 
 
