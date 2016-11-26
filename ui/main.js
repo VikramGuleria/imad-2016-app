@@ -73,7 +73,8 @@ submit.onclick = function() {
         }
 };
 
-
+request.open('GET','http://vikramguleria.imad.hasura-app.io/submit-name?name='+ name,true);
+request.send(null);
 
 };
 
@@ -105,6 +106,5 @@ var passwordInput = document.getElementById('password');
 var password= passwordInput.value;
 request.open('GET','http://vikramguleria.imad.hasura-app.io/submit-password?password='+ password,true);
 request.send(null);
-request.open('GET','http://vikramguleria.imad.hasura-app.io/submit-name?name='+ name,true);
-request.send(null);
+
 };
