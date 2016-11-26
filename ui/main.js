@@ -1,11 +1,11 @@
 
 
 
-var img = document.getElementById('madi2');
+var img = document.getElementById('madi');
 var marginRight = 0;
 function moveLeft () {
     
-     marginRight = marginRight + 1;
+     marginRight = marginRight + -100
      img.style.marginLeft = marginRight + 'px';
 }
 img.onclick = function(){
