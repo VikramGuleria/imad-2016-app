@@ -2,6 +2,8 @@ body {
     font-family: Algerian;
     background-color: pink;
    background:url(http://freephotos.atguru.in/hdphotos/computer-backgrounds/3931-pc-ware-1920x1200-computer-wallpaper.jpg), url(background-pattern.png);
+   background: linear-gradient(black, white);
+    background: radial-gradient(circle, black, white);
    
    
     margin-top: 60px;
