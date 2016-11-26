@@ -21,6 +21,16 @@ function moveLeft () {
 img.onclick = function(){
      var interval = setInterval(moveLeft,10);
 };
+var img = document.getElementById('madi3');
+var marginLeft = 0;
+function moveRight () {
+    
+     marginLeft = marginLeft + 5;
+     img.style.marginLeft = marginLeft + 'px';
+}
+img.onclick = function(){
+     var interval = setInterval(moveRight,-10);
+};
 
 
 
